@@ -19,6 +19,28 @@ O keylogger é projetado para capturar entradas de teclado de forma discreta e p
 
 ---
 
+## Estrutura
+
+Ozymandias/
+├─ README.md
+├─ src/
+│  ├─ main.py
+│  ├─ keylogger_core.py
+│  ├─ parser.py
+│  ├─ crypto_storage.py
+│  ├─ analysis_offline.py
+│  ├─ ai_module.py
+│  └─ utils.py
+├─ tests/
+│  └─ test_keylogger.py
+├─ docs/
+│  └─ blueprint_ascii.txt
+└─ scripts/
+   ├─ gerar_pdf_hibrido.py
+   └─ setup_persistence.py
+
+---
+
 ## Funcionalidades
 
 - Captura de teclas em tempo real  
