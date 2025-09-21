@@ -1,0 +1,43 @@
+Ozymandias – Keylogger Blueprint ASCII
+
+[DISPOSITIVOS]
+M1 – Máquina de Análise / Kali ou PC de Controle
+M2 – Keylogger Ozymandias (Software stealth)
+M3 – Computador alvo (Windows/Linux)
+
+[FLUXO DE DADOS]
+
+M3 (Teclado / Clipboard / Apps) 
+      |
+      v
+[Thread 1 – Keyboard Hook]
+      |
+      v
+[Thread 2 – Buffer Circular Inteligente]
+      |  FIFO thread-safe, overflow controlado, prioriza dados críticos
+      v
+[Thread 3 – Parser & Pre-processamento]
+      |  Detecta senhas, padrões, campos de formulário, compressão adaptativa
+      v
+[Thread 4 – Criptografia & Armazenamento]
+      |  AES dinâmico + SHA256, segmentação por hora/aplicação, redundância
+      v
+[Thread 5 – Análise Offline / Transferência (M1)]
+      |  Descriptografia, correlação de timestamps, geração de relatórios
+      v
+M1 (Logs analisados, relatórios detalhados)
+
+[FUNCIONALIDADES ADICIONAIS]
+- Auto-aprendizado / triggers dinâmicas
+- Clipboard stealth
+- Captura de screenshots sob demanda
+- Persistência invisível
+- PDF híbrido para testes
+- Modularidade: cada thread é independente e atualizável
+- Pipeline multi-threaded sem perda de dados
+
+[OBSERVAÇÕES]
+- Pipeline otimizado para monitoramento longo e furtivo
+- Logs segmentados e criptografados
+- Stealth total: M3 não percebe atividade
+- Preparado para análise offline segura
